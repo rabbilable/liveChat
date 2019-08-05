@@ -4,17 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script defer src="scripts/app.js"></script>
-  <script defer src="scripts/ui.js"></script>
-  <script defer src="scripts/chat.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title>Chat App</title>
-  <style>
-  .btn:focus{
-  outline: none !important;
-}
-  </style>
 </head>
 <body>
 
@@ -61,7 +53,7 @@
       </div>
 
 
-
+<script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
@@ -84,6 +76,8 @@
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
 </script>
-  
+<script src="scripts/chat.js"></script>
+<script src="scripts/ui.js"></script>
+<script src="scripts/app.js"></script>
 </body>
 </html>
